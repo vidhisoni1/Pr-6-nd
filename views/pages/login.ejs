@@ -1,0 +1,36 @@
+<%-include('../partials/header.ejs')%>
+<div class="container m-auto">
+  <div class="">
+    <h1>Login</h1>
+  </div>
+  <form method="post" class="col-12 mt-3">
+    <div class="row">
+      <div class="mb-3 col-6">
+        <label for="exampleInputPassword1" class="form-label">Email</label>
+        <br />
+        <input
+          required
+          type="email"
+          class="form-control"
+          name="email"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <br />
+      <div class="mb-3 col-6">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <br />
+        <input
+          required
+          type="password"
+          class="form-control"
+          name="password"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <br />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
+<%-include('../partials/footer.ejs')%>

@@ -1,0 +1,51 @@
+<%-include('../partials/header.ejs')%>
+<div class="container m-auto">
+  <div class="">
+    <h1>Blog</h1>
+  </div>
+  <form method="post" class="col-12 mt-3" enctype="multipart/form-data">
+    <div class="row">
+      <div class="mb-3 col-6">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <br />
+        <input
+          required
+          type="text"
+          class="form-control"
+          name="title"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+      <br />
+      <div class="mb-3 col-6">
+        <label for="exampleInputPassword1" class="form-label"
+          >Description</label
+        >
+        <br />
+        <input
+          required
+          type="text"
+          class="form-control"
+          name="description"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 col-6">
+        <label for="exampleInputPassword1" class="form-label">Image</label>
+        <br />
+        <input
+          required
+          type="file"
+          class="form-control"
+          name="image"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <br />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<%-include('../partials/footer.ejs')%>
